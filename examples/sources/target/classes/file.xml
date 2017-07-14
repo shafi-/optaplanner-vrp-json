@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<VrpVehicleRoutingSolution id="1">
+    <id>0</id>
+    <name>A-n33-k6</name>
+    <distanceType>AIR_DISTANCE</distanceType>
+    <distanceUnitOfMeasurement>distance</distanceUnitOfMeasurement>
+    <locationList>
+        <VrpAirLocation id="7">
+            <id>144</id>
+            <latitude>19.3</latitude>
+            <longitude>19.98788</longitude>
+        </VrpAirLocation>
+        <VrpAirLocation id="10">
+            <id>244</id>
+            <latitude>24.6</latitude>
+            <longitude>23.98444</longitude>
+        </VrpAirLocation>
+        <VrpAirLocation id="13">
+            <id>ABCDEFG666666</id>
+            <latitude>24.99</latitude>
+            <longitude>24.8888</longitude>
+        </VrpAirLocation>
+        <VrpAirLocation id="15">
+            <id>ABCDEFG77777</id>
+            <latitude>17.9922</latitude>
+            <longitude>17.888822</longitude>
+        </VrpAirLocation>
+        <VrpAirLocation id="17">
+            <id>ABCDEFG8888</id>
+            <latitude>17.9925</latitude>
+            <longitude>17.888726</longitude>
+        </VrpAirLocation>
+        <VrpAirLocation id="19">
+            <id>ABCDEFG9999</id>
+            <latitude>17.9955</latitude>
+            <longitude>17.888726</longitude>
+        </VrpAirLocation>
+    </locationList>
+    <depotList>
+        <VrpDepot id="8">
+            <id>1</id>
+            <location class="VrpAirLocation" reference="7"/>
+        </VrpDepot>
+        <VrpDepot id="11">
+            <id>2</id>
+            <location class="VrpAirLocation" reference="10"/>
+        </VrpDepot>
+    </depotList>
+    <vehicleList>
+        <VrpVehicle>
+            <id>1</id>
+            <capacity>14</capacity>
+            <depot reference="8"/>
+        </VrpVehicle>
+        <VrpVehicle>
+            <id>2</id>
+            <capacity>14</capacity>
+            <depot reference="11"/>
+        </VrpVehicle>
+    </vehicleList>
+    <customerList>
+        <VrpCustomer id="14">
+            <id>ABCDEFG666666</id>
+            <location class="VrpAirLocation" reference="13"/>
+            <demand>1</demand>
+        </VrpCustomer>
+        <VrpCustomer id="16">
+            <id>ABCDEFG77777</id>
+            <location class="VrpAirLocation" reference="15"/>
+            <demand>1</demand>
+        </VrpCustomer>
+        <VrpCustomer id="18">
+            <id>ABCDEFG8888</id>
+            <location class="VrpAirLocation" reference="17"/>
+            <demand>1</demand>
+        </VrpCustomer>
+        <VrpCustomer id="20">
+            <id>ABCDEFG9999</id>
+            <location class="VrpAirLocation" reference="19"/>
+            <demand>1</demand>
+        </VrpCustomer>
+    </customerList>
+</VrpVehicleRoutingSolution>

@@ -1,0 +1,121 @@
+<VrpVehicleRoutingSolution id="1">
+  <id>0</id>
+  <name>A-n33-k6</name>
+  <distanceType>AIR_DISTANCE</distanceType>
+  <distanceUnitOfMeasurement>distance</distanceUnitOfMeasurement>
+  <locationList id="2">
+    <VrpAirLocation id="3">
+      <id>144</id>
+      <latitude>19.3</latitude>
+      <longitude>19.98788</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="4">
+      <id>244</id>
+      <latitude>24.6</latitude>
+      <longitude>23.98444</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="5">
+      <id>3333</id>
+      <latitude>24.6</latitude>
+      <longitude>23.98444</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="6">
+      <id>3334</id>
+      <latitude>18.6</latitude>
+      <longitude>19.98444</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="7">
+      <id>3335</id>
+      <latitude>18.6</latitude>
+      <longitude>19.98444</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="8">
+      <id>3336</id>
+      <latitude>18.6</latitude>
+      <longitude>19.98444</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="9">
+      <id>3337</id>
+      <latitude>20.90043628704679</latitude>
+      <longitude>23.848739684068</longitude>
+    </VrpAirLocation>
+    <VrpAirLocation id="10">
+      <id>3338</id>
+      <latitude>21.67898299984956</latitude>
+      <longitude>24.672419539641943</longitude>
+    </VrpAirLocation>
+  </locationList>
+  <depotList id="11">
+    <VrpDepot id="12">
+      <id>1</id>
+      <location class="VrpAirLocation" reference="3"/>
+    </VrpDepot>
+    <VrpDepot id="13">
+      <id>2</id>
+      <location class="VrpAirLocation" reference="4"/>
+    </VrpDepot>
+  </depotList>
+  <vehicleList id="14">
+    <VrpVehicle id="15">
+      <id>1</id>
+      <capacity>100000</capacity>
+      <depot reference="12"/>
+      <nextCustomer id="16">
+        <id>3334</id>
+        <location class="VrpAirLocation" reference="6"/>
+        <demand>1</demand>
+        <previousStandstill class="VrpVehicle" reference="15"/>
+        <nextCustomer id="17">
+          <id>3335</id>
+          <location class="VrpAirLocation" reference="7"/>
+          <demand>1</demand>
+          <previousStandstill class="VrpCustomer" reference="16"/>
+          <nextCustomer id="18">
+            <id>3336</id>
+            <location class="VrpAirLocation" reference="8"/>
+            <demand>1</demand>
+            <previousStandstill class="VrpCustomer" reference="17"/>
+            <vehicle reference="15"/>
+          </nextCustomer>
+          <vehicle reference="15"/>
+        </nextCustomer>
+        <vehicle reference="15"/>
+      </nextCustomer>
+    </VrpVehicle>
+    <VrpVehicle id="19">
+      <id>2</id>
+      <capacity>100000</capacity>
+      <depot reference="13"/>
+      <nextCustomer id="20">
+        <id>3337</id>
+        <location class="VrpAirLocation" reference="9"/>
+        <demand>6</demand>
+        <previousStandstill class="VrpVehicle" reference="19"/>
+        <nextCustomer id="21">
+          <id>3338</id>
+          <location class="VrpAirLocation" reference="10"/>
+          <demand>4</demand>
+          <previousStandstill class="VrpCustomer" reference="20"/>
+          <nextCustomer id="22">
+            <id>3333</id>
+            <location class="VrpAirLocation" reference="5"/>
+            <demand>1</demand>
+            <previousStandstill class="VrpCustomer" reference="21"/>
+            <vehicle reference="19"/>
+          </nextCustomer>
+          <vehicle reference="19"/>
+        </nextCustomer>
+        <vehicle reference="19"/>
+      </nextCustomer>
+    </VrpVehicle>
+  </vehicleList>
+  <customerList id="23">
+    <VrpCustomer reference="22"/>
+    <VrpCustomer reference="16"/>
+    <VrpCustomer reference="17"/>
+    <VrpCustomer reference="18"/>
+    <VrpCustomer reference="20"/>
+    <VrpCustomer reference="21"/>
+  </customerList>
+  <score id="24">0hard/-9236soft</score>
+</VrpVehicleRoutingSolution>
